@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: mediumaquamarine;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.flashcards__wrapper {
+    background-color: mediumaquamarine;
+    width: 830px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h1, p {
+    margin: 0;
+    font-family: 'Black Ops One', cursive;
+}
+
+h1 {
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 45%;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 5%;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.card-wrapper {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5%;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.back, .front {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
